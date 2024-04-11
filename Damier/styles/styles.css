@@ -1,0 +1,25 @@
+.ligne {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.damier {
+    height: 100%;
+    margin:auto;
+}
+
+.case1 {
+    width: 70px;
+    height: 70px;
+    border: solid 1px black;
+    background-color: brown;
+}
+
+.case2 {
+    width: 70px;
+    height: 70px;
+    border: solid 1px black;
+    background-color: yellow;
+}
+
