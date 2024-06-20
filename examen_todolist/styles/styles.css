@@ -1,0 +1,519 @@
+/* Polices */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+/* Page principale */
+body {
+    margin: 0 4em;
+
+    color: white;
+    font-family: roboto;
+}
+
+
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+
+    padding: 1em 0;
+}
+
+header h1{
+    color: #FFA500;
+
+    font-size: 2em;
+    font-weight: 900;
+    
+}
+
+header nav {
+    display: flex;
+    gap: 1em;
+}
+
+header nav button {
+    padding: 0.5em 1.5em;
+
+    background-color: #FFA500;
+    color: white;
+
+    font-size: 1em;
+    font-weight: 600;
+
+    border: none;
+    border-radius: 0.5em;
+
+    cursor: pointer;
+}
+
+
+
+/* Section informations */
+.informations {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    gap: 2em;
+
+    padding: 1em 0;
+}
+
+.informations .tachesNonTerminees {
+    display: flex;
+    flex-direction: row;
+
+    padding: 0 1em;
+
+    background-color: #FFA500;
+    background-image: url("/assets/images/tache.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right bottom 110%;
+    background-size: 200px;
+
+    border-radius: 0.5em;
+}
+
+.tachesNonTerminees h3 {
+    font-size: 10em;
+    font-weight: 900;
+}
+
+.informations .groupesCree {
+    display: flex;
+    flex-direction: row;
+
+    padding: 0 1em;
+
+    background-color: #F6F8FA;
+    background-image: url("/assets/images/groupe.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right bottom 100%;;
+    background-size: 200px;
+
+    color: black;
+
+    border: solid 1px #D9D9D9;
+    border-radius: 0.5em;
+}
+
+.groupesCree h3 {
+    font-size: 10em;
+    font-weight: 900;
+}
+
+.informations p {
+    padding: 0.5em;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+
+
+/* Section tâches */
+.taches {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    gap: 2em;
+
+    margin-top: 2em;
+}
+
+.groupe h3 {
+    margin-bottom: 1em;
+
+    color: black;
+
+    font-size: 1.25em;
+    font-weight: 700;
+}
+
+.groupe {
+    padding: 1em;
+
+    background-color:  white;
+    box-shadow: 0 5px 15px 0 #00000026;
+
+    border-radius: 0.5em;
+}
+
+.groupe ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+}
+
+.groupe ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+
+    padding: 1em 0.5em;
+
+    background-color: #ffa60098;
+    border-radius: 0.5em;
+}
+
+.groupe ul li div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.boutonValide {
+    display: flex;
+    justify-content: center;
+    background-color: #40C4AA;
+    border: none;
+    border-radius: 0.5em;
+}
+
+.boutonNonValide {
+    display: flex;
+    justify-content: center;
+    background-color: #e23636;
+    border: none;
+    border-radius: 0.5em;
+}
+
+
+
+/* Footer */
+footer {
+    margin-top: 2em;
+    padding: 1em 0;
+    color: black;
+
+    text-align: center;
+}
+
+/* Modal ajout groupe */
+.ajoutGroupe {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+    
+    background-color: rgba(0, 0, 0, 0.681);
+    backdrop-filter: blur(4px);
+}
+
+.ajoutGroupe form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    width: 30em;
+    height: 12.5em;
+    padding: 1em 2em;
+
+    background-color: white;
+    box-shadow: 0 5px 15px 0 #00000026;;
+
+    border-radius: 1em;
+}
+
+.ajoutGroupe h3 {
+    margin-bottom: 0.25em;
+
+    color: black;
+
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+.ajoutGroupe p {
+    margin-bottom: 1em;
+
+    color: black;
+}
+
+.ajoutGroupe input {
+    width: 80%;
+    height: 2.5em;
+
+    margin-bottom: 1em;
+
+    background-color: #F6F8FA;
+    border: solid 1px #D9D9D9;
+    border-radius: 0.5em;
+}
+
+.ajoutGroupe .creerGroupe{
+    /* width: 40%; */
+    height: 2em;
+    padding: 0 2em;
+
+
+    margin-bottom: 0.5em;
+
+    background-color: #FFA500;
+    color: white;
+    
+    font-size: 1em;
+    font-weight: 600;
+
+    border: none;
+    border-radius: 0.5em;
+
+    cursor: pointer;
+
+}
+
+.ajoutGroupe .annulerGroupe{
+    /* width: 40%; */
+    height: 2em;
+    padding: 0 2em;
+
+    background-color: #e23636;
+    color: white;
+    
+    font-size: 1em;
+    font-weight: 600;
+
+    border: none;
+    border-radius: 0.5em;
+
+    cursor: pointer;
+}
+
+
+
+/* Modal ajout tâche */
+.ajoutTache {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+    
+    background-color: rgba(0, 0, 0, 0.681);
+    backdrop-filter: blur(4px);
+}
+
+.ajoutTache form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    width: 30em;
+    height: 12.5em;
+    padding: 1em 2em;
+
+    background-color: white;
+    box-shadow: 0 5px 15px 0 #00000026;;
+
+    border-radius: 1em;
+}
+
+.ajoutTache h3 {
+    margin-bottom: 0.25em;
+
+    color: black;
+
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+.ajoutTache p {
+    margin-bottom: 1em;
+
+    color: black;
+}
+
+.ajoutTache select {
+    width: 80%;
+    height: 2.5em;
+
+    margin-bottom: 0.5em;
+
+    background-color: #F6F8FA;
+    border: solid 1px #D9D9D9;
+    border-radius: 0.5em;
+}
+
+.ajoutTache input {
+    width: 80%;
+    height: 2.5em;
+
+    margin-bottom: 1em;
+
+    background-color: #F6F8FA;
+    border: solid 1px #D9D9D9;
+    border-radius: 0.5em;
+}
+
+.ajoutTache .creerTache {
+    /* width: 40%; */
+    height: 2em;
+    padding: 0 2em;
+
+    margin-bottom: 0.5em;
+
+    background-color: #FFA500;
+    color: white;
+    
+    font-size: 1em;
+    font-weight: 600;
+
+    border: none;
+    border-radius: 0.5em;
+
+    cursor: pointer;
+
+}
+
+.ajoutTache .annulerTache {
+    /* width: 40%; */
+    height: 2em;
+    padding: 0 2em;
+
+    background-color: #e23636;
+    color: white;
+    
+    font-size: 1em;
+    font-weight: 600;
+
+    border: none;
+    border-radius: 0.5em;
+
+    cursor: pointer;
+}
+
+
+
+/* Modal modifier tâche */
+.modifierTache {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+    
+    background-color: rgba(0, 0, 0, 0.681);
+    backdrop-filter: blur(4px);
+}
+
+.modifierTache form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    width: 30em;
+    height: 12.5em;
+    padding: 1em 2em;
+
+    background-color: white;
+    box-shadow: 0 5px 15px 0 #00000026;;
+
+    border-radius: 1em;
+}
+
+.modifierTache h3 {
+    margin-bottom: 0.25em;
+
+    color: black;
+
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+.modifierTache p {
+    margin-bottom: 1em;
+
+    color: black;
+}
+
+.modifierTache select {
+    width: 80%;
+    height: 2.5em;
+
+    margin-bottom: 0.5em;
+
+    background-color: #F6F8FA;
+    border: solid 1px #D9D9D9;
+    border-radius: 0.5em;
+}
+
+.modifierTache input {
+    width: 80%;
+    height: 2.5em;
+
+    margin-bottom: 1em;
+
+    background-color: #F6F8FA;
+    border: solid 1px #D9D9D9;
+    border-radius: 0.5em;
+}
+
+.modifierTache .modifier {
+    /* width: 40%; */
+    height: 2em;
+    padding: 0 2em;
+
+    margin-bottom: 0.5em;
+
+    background-color: #FFA500;
+    color: white;
+    
+    font-size: 1em;
+    font-weight: 600;
+
+    border: none;
+    border-radius: 0.5em;
+
+    cursor: pointer;
+
+}
+
+.modifierTache .annulerTache {
+    /* width: 40%; */
+    height: 2em;
+    padding: 0 2em;
+
+    background-color: #e23636;
+    color: white;
+    
+    font-size: 1em;
+    font-weight: 600;
+
+    border: none;
+    border-radius: 0.5em;
+
+    cursor: pointer;
+}
