@@ -63,13 +63,15 @@ function afficheTaches($todolist) {
         echo "<div class='groupe'>";
         echo "<h3>$groupe</h3>";
         echo "<ul>";
-
+    
         foreach ($taches as $tache) {
-
             // Variables pour les boutons
             $nouveauStatut = $tache['faire'] === 'true' ? 'false' : 'true';
             $classBouton = $tache['faire'] === 'true' ? 'boutonValide' : 'boutonNonValide';
             $imageBouton = $tache['faire'] === 'true' ? '../assets/images/valide.png' : '../assets/images/croix.png';
+    
+            // Si la tâche est valide, utiliser la balise <del>
+            $tacheNom = $tache['faire'] === 'true' ? "<del>{$tache['tache']}</del>" : $tache['tache'];
             
             echo "<li><div>";
             echo "<form method='post' action='functions/maj_tache.php'>";
@@ -77,10 +79,10 @@ function afficheTaches($todolist) {
             echo "<input type='hidden' name='tache' value='" . $tache['tache'] . "'>";
             echo "<input type='hidden' name='nouveauStatut' value='" . $nouveauStatut . "'>";
             echo "<button class='$classBouton' type='submit'>";
-            echo "<img src='images/$imageBouton'>";
+            echo "<img src='$imageBouton'>";
             echo "</button>";
             echo "</form> ";
-            echo "<p>{$tache['tache']}</p>";
+            echo "<p>$tacheNom</p>";
             echo "</div>";
             echo "<div><button onclick=\"modalModifierTache('{$tache['groupe']}', '{$tache['tache']}')\">Modifier</button>";
             echo "<form method='post' action='functions/supprimer_tache.php'>";
@@ -91,10 +93,9 @@ function afficheTaches($todolist) {
             echo "</div>";
             echo "</li>";
         }
-
+    
         echo "</ul>";
         echo "</div>";
-
     }
 }
 
