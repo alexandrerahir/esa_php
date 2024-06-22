@@ -97,6 +97,7 @@
         }
     }
 
+
     // Afficher une tâche individuelle
     function afficheTache($tache) {
         // Variables pour les boutons
