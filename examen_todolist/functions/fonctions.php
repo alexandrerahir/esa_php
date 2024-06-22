@@ -68,7 +68,7 @@
             echo "<h3>$groupe</h3>";
             echo "<ul>";
 
-            // Variable pour sotcket les tâches
+            // Variable pour stocker les tâches
             $tachesNonTerminees = [];
             $tachesTerminees = [];
 
