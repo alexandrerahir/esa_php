@@ -1,0 +1,99 @@
+header {
+    /* Disposition */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1rem;
+    padding: 1rem 0;
+
+    /* Taille */
+    width: 300px;
+    height: calc(100vh - 4rem);
+}
+
+
+/* Navigation */
+header nav h1{
+    /* Disposition */
+    margin-bottom: 2rem;
+
+    /* Texte */
+    font-family: "Inter", sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+    color: #6D8C4F;
+
+}
+
+header nav li {
+    /* Disposition */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1rem;
+
+    /* Taille */
+    width: 100%;
+
+    /* Texte */
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #727272;
+}
+
+header nav li a {
+    /* Disposition */
+    padding: 0.5rem 0;
+
+    /* Taille */
+    width: 100%;
+}
+
+header nav li a:hover {
+    /* Décoration */
+    background-color: #6D8C4F;
+    color: #FFFFFF;
+    border-radius: 0.25rem;
+}
+ 
+header nav li a i {
+    /* Disposition */
+    margin: 0 0.5rem;
+}
+
+
+/* Bouton déconnexion */
+header form {
+    /* Disposition */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* Taille */
+    width: 100%;
+}
+
+header form button {
+    /* Disposition */
+    padding: 0.5rem;
+
+    /* Taille */
+    width: 100%;
+
+    /* Texte */
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #FFFFFF;
+    background-color: #6D8C4F;
+    border: none;
+    border-radius: 0.25rem;
+}
+
+header form button:hover {
+    /* Décoration */
+    background-color: #5C7D3A;
+}

@@ -1,0 +1,77 @@
+form {
+    /* Disposition */
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    /* Disposition */
+    margin-bottom: 0.25rem;
+
+    /* Texte */
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #70808F;
+}
+
+form select {
+    /* Disposition */
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+
+    /* Texte */
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #333333;
+
+    /* Décoration */
+    border: 1px solid #70808F;
+    border-radius: 0.5rem;
+}
+
+form input {
+    /* Disposition */
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+
+    /* Texte */
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #333333;
+
+    /* Décoration */
+    border: 1px solid #70808F;
+    border-radius: 0.5rem;
+}
+
+form .formulaire-actions {
+    /* Disposition */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    /* Taille */
+    width: 100%;
+}
+
+form button {
+    /* Disposition */
+    padding: 0.50rem 1rem;
+    width: 50%;
+
+    /* Texte */
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #FFFFFF;
+
+    /* Décoration */
+    background-color: #6D8C4F;
+    border: none;
+    border-radius: 0.25rem;
+}

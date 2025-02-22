@@ -1,0 +1,148 @@
+/* Main */
+main {
+    /* Disposition */
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 2rem;
+
+    /* Taille */
+    height: calc(100vh - 4rem);
+}
+
+
+
+/* Formulaire connexion */
+.connexion {
+    /* Disposition */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* Taille */
+    width: 50%;
+}
+
+.connexion form {
+    /* Disposition */
+    display: flex;
+    flex-direction: column;
+
+    /* Taille */
+    width: 50%;
+}
+
+.connexion form h1 {
+    /* Disposition */
+    margin-bottom: 1rem;
+
+    /* Texte */
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #333333;
+}
+
+.connexion form label {
+    /* Disposition */
+    margin-bottom: 0.25rem;
+    
+    /* Texte */
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #70808F;
+}
+
+.connexion form input {
+    /* Disposition */
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+
+    /* Texte */
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #333333;
+
+    /* Décoration */
+    border: 1px solid #70808F;
+    border-radius: 0.5rem;
+}
+
+.connexion form input:focus {
+    /* Décoration */
+    border-color: #6D8C4F;
+}
+
+.connexion form p {
+    /* Disposition */
+    margin-bottom: 1rem;
+    
+    /* Texte */
+    font-family: "Inter", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #E63946;
+}
+
+.connexion form button {
+    /* Disposition */
+    padding: 0.5rem;
+
+    /* Texte */
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #FFFFFF;
+
+    /* Décoration */
+    background-color: #6D8C4F;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.connexion form button:hover {
+    /* Décoration */
+    background-color: #5C7D3A;
+}
+
+
+
+/* Informations */
+.informations {
+    /* Disposition */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* Taille */
+    width: 50%;
+
+    /* Décoration */
+    background-color: #6D8C4F;
+    border-radius: 1rem;
+}
+
+.informations h1 {
+    /* Disposition */
+    margin-bottom: 1rem;
+
+    /* Texte */
+    font-family: "Inter", sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #FFFFFF;
+}
+
+.informations p {
+    /* Texte */
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 200;
+    text-align: center;
+    color: #FFFFFF;
+}
